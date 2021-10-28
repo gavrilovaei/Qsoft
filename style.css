@@ -63,6 +63,7 @@ body {
 
 .search__input {
 	border: none;
+	outline: none;
 	padding-left: 2px;
 	padding-top: 2px;
 	font-family: Roboto;
@@ -75,15 +76,11 @@ body {
 	cursor: pointer;
 }
 
-.search__input:hover, .search__input:active {
-	border: none;
-}
-
 .user_big {
 	display: none;
 }
 
-.partners {	
+.partners {
 	max-width: 375px;
 	margin: 0 auto;
 	padding-top: 48px;
@@ -184,7 +181,6 @@ body {
 		padding-left: 10px;
 		padding-bottom: 20px;
 	}
-	
 	.partners__block {
 		flex-direction: row;
 		flex-wrap: wrap;
