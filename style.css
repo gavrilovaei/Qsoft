@@ -33,6 +33,10 @@ body {
 }
 
 .search {
+	width: 100%;
+}
+
+.search__wrapper {
 	display: flex;
 	justify-content: flex-start;
 	align-items: center;
@@ -56,6 +60,11 @@ body {
 	font-size: 14px;
 	line-height: 16px;
 	color: #BBC4D6;
+	cursor: pointer;
+}
+
+.search__input:hover, .search__input:active {
+	border: none;
 }
 
 .user_big {
@@ -91,4 +100,106 @@ body {
 	box-sizing: border-box;
 	border-radius: 5px;
 	margin-top: 20px;
+	cursor: pointer;
 }
+
+.henkel-logo {
+	background-image: url(img/Henkel_mob.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: auto;
+}
+
+@media (min-width: 768px) {
+	.header {
+		flex-direction: row;
+		height: 80px;
+	}
+	.top {
+		width: auto;
+		padding-right: 49px;
+	}
+	.user_small {
+		display: none;
+	}
+	.user_big {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding-left: 21px;
+		padding-right: 20px;
+		height: 80px;
+		border-left: 1px solid #EBEBF1;
+	}
+	.user__name {
+		margin-right: 10px;
+	}
+	.search__wrapper {
+		border: 1px solid #EBEBF1;
+		box-sizing: border-box;
+		border-radius: 5px;
+		height: 40px;
+		max-width: 344px;
+	}
+	.search__icon {
+		margin-left: 9px;
+	}
+	.user__avatar {
+		cursor: pointer;
+		padding-top: 3px;
+	}
+	.partners {
+		max-width: 100%;
+		padding-left: 10px;
+		padding-right: 10px;
+		padding-bottom: 389px;
+	}
+	.partners__heading {
+		padding-left: 10px;
+		padding-bottom: 20px;
+	}
+	.partners__block {
+		display: flex;
+		flex-wrap: wrap;
+	}
+	.partners__block-item {
+		width: 229px;
+		height: 120px;
+		margin: 10px;
+	}
+	.partners__henlel-logo {
+		width: 117px;
+		height: 64px;
+	}
+
+	.partners__john-deere-logo {
+		width: 183px;
+		height: 34px;
+	}
+
+	.partners__mcdonald-logo {
+		width: 99px;
+		height: 74px;
+	}
+
+	.partners__ikea-logo {
+		width: 175px;
+		height: 70px;
+	}
+
+	.partners__reebok-logo {
+		width: 187px;
+		height: 38px;
+	}
+
+	.partners__nike-logo {
+		width: 143px;
+		height: 74px;
+	}
+
+	.partners__caterpillar-logo {
+		width: 196px;
+		height: 30px;
+	}
+}
+
