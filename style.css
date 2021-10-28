@@ -9,15 +9,18 @@ body {
 	font-weight: 400;
 	font-size: 14px;
 	line-height: 16px;
-	/* letter-spacing: 0.01em; */
 	color: #bbc4d6;
 }
 
 .header {
+	box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.05);
+}
+
+.header-container {
+	width: 100%;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.05);
 }
 
 .top {
@@ -59,6 +62,7 @@ body {
 	font-weight: normal;
 	font-size: 14px;
 	line-height: 16px;
+	letter-spacing: 0.01em;
 	color: #BBC4D6;
 	cursor: pointer;
 }
@@ -112,8 +116,11 @@ body {
 
 @media (min-width: 768px) {
 	.header {
-		flex-direction: row;
 		height: 80px;
+	}
+	.header-container {
+		flex-direction: row;
+		justify-content: space-between;
 	}
 	.top {
 		width: auto;
@@ -171,35 +178,82 @@ body {
 		width: 117px;
 		height: 64px;
 	}
-
 	.partners__john-deere-logo {
 		width: 183px;
 		height: 34px;
 	}
-
 	.partners__mcdonald-logo {
 		width: 99px;
 		height: 74px;
 	}
-
 	.partners__ikea-logo {
 		width: 175px;
 		height: 70px;
 	}
-
 	.partners__reebok-logo {
 		width: 187px;
 		height: 38px;
 	}
-
 	.partners__nike-logo {
 		width: 143px;
 		height: 74px;
 	}
-
 	.partners__caterpillar-logo {
 		width: 196px;
 		height: 30px;
 	}
 }
 
+@media (min-width: 1440px) {
+	.header-container {
+		max-width: 1210px;
+		margin: 0 auto;
+	}
+	.search__wrapper {
+		max-width: 763px;
+	}
+	.top {
+		padding-right: 60px;
+	}
+	.partners {
+		max-width: 1200px;
+		padding-top: 40px;
+		padding-bottom: 382px;
+	}
+	.partners__heading {
+		font-size: 36px;
+		padding-left: 15px;
+		padding-bottom: 16px;
+	}
+	.partners__block-item {
+		width: 270px;
+		margin: 15px;
+	}
+	.partners__henlel-logo {
+		width: 116px;
+	}
+	.partners__john-deere-logo {
+		width: 234px;
+		height: 44px;
+	}
+	.partners__mcdonald-logo {
+		width: 85px;
+		height: 64px;
+	}
+	.partners__ikea-logo {
+		width: 160px;
+		height: 64px;
+	}
+	.partners__reebok-logo {
+		width: 234px;
+		height: 48px;
+	}
+	.partners__nike-logo {
+		width: 122px;
+		height: 64px;
+	}
+	.partners__caterpillar-logo {
+		width: 234px;
+		height: 36px;
+	}
+}
